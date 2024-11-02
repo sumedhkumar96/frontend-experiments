@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main-styles.css">
+    <title>File Upload</title>
+</head>
+<body>
+    <header>
+        <h1>File Upload</h1>
+    </header>
+    <main>
+        <div id="file-drop-zone" class="drop-zone">
+            <p>Drag and drop a file here or click to upload</p>
+            <div id="uploaded-file-box" class="file-box">
+                <p>No file uploaded</p>
+            </div>
+            <input type="file" id="file-input" accept=".jpg, .jpeg, .png" style="display: none;">
+        </div>
+        <form id="my-form">
+            <label for="uploader-name">Uploader Name:</label>
+            <input type="text" id="uploader-name" name="uploader-name" required>
+            <div id="name-error" class="error"></div>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="uploader-info">
+            <h2>Uploader Information</h2>
+            <p id="user-ip">IP Address: Loading...</p>
+            <p id="user-location">Location: Loading...</p>
+        </div>
+    </main>
+    <script src="./js/main-script.js"></script>
+</body>
+</html>

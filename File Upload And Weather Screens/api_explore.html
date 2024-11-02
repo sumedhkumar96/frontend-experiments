@@ -1,0 +1,42 @@
+<!-- weather.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data Explorer</title>
+    <link rel="stylesheet" href="./css/weather-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Data Explorer</h1>
+    </header>
+    <main>
+        <section id="search-api">
+            <h2>API Weather Search</h2>
+            <div class="search-bar">
+                <input type="text" id="api-search-input" placeholder="Search for weather data from API">
+                <button id="api-search-button">Search</button>
+            </div>
+        </section>
+        <section id="api-results">
+            <div id="search-results-api"></div>
+        </section>
+        <section id="search-db">
+            <h2>IndexedDB Weather Search</h2>
+            <div class="search-bar">
+                <input type="text" id="db-search-input" placeholder="Search for stored weather data">
+                <button id="db-search-button">Search</button>
+            </div>
+        </section>
+        <section id="db-results">
+            <div id="search-results-db"></div>
+        </section>
+        <section id="all-db-data">
+            <h2>All IndexedDB Data</h2>
+            <div id="all-data"></div>
+        </section>
+    </main>
+    <script src="./js/weather-script.js"></script>
+</body>
+</html>
